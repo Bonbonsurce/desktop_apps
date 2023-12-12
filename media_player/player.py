@@ -9,7 +9,7 @@ import pygame
 from PIL import Image, ImageFont
 from PIL import ImageTk
 
-font = ImageFont.truetype("LabGrotesque-Regular.ttf", size=10)
+font = ImageFont.truetype("content/LabGrotesque-Regular.ttf", size=10)
 
 #отвечает за автоматическое переключение песни на первую, без перескакивания
 minus_time_min, minus_time, minutes, seconds, minutes_set, seconds_set, index_next, paused_time = 0, 0, 0, 0, 0, 0, 0, 0
@@ -30,20 +30,20 @@ root.grid_columnconfigure(3, weight=1) # 3 rows
 root.resizable(False, False)
 root.configure(bg=bg)
 
-previous_white_img = ImageTk.PhotoImage(Image.open('backward.png'))
-previous_black_img = ImageTk.PhotoImage(Image.open('backward_night.png'))
-next_white_img = ImageTk.PhotoImage(Image.open('forward.png'))
-next_black_img = ImageTk.PhotoImage(Image.open('forward_night.png'))
-pause_white_img = ImageTk.PhotoImage(Image.open('pause.png'))
-pause_black_img = ImageTk.PhotoImage(Image.open('pause_night.png'))
-continue_white_img = ImageTk.PhotoImage(Image.open('play.png'))
-continue_black_img = ImageTk.PhotoImage(Image.open('play_night.png'))
-change_theme_white_img = ImageTk.PhotoImage(Image.open('mode.png'))
-change_theme_black_img = ImageTk.PhotoImage(Image.open('mode_night.png'))
-bad_views_white_img = ImageTk.PhotoImage(Image.open('sleep.png'))
-bad_views_black_img = ImageTk.PhotoImage(Image.open('sleep_night.png'))
-add_white_img = ImageTk.PhotoImage(Image.open('add.png'))
-add_black_img = ImageTk.PhotoImage(Image.open('add_night.png'))
+previous_white_img = ImageTk.PhotoImage(Image.open('content/backward.png'))
+previous_black_img = ImageTk.PhotoImage(Image.open('content/backward_night.png'))
+next_white_img = ImageTk.PhotoImage(Image.open('content/forward.png'))
+next_black_img = ImageTk.PhotoImage(Image.open('content/forward_night.png'))
+pause_white_img = ImageTk.PhotoImage(Image.open('content/pause.png'))
+pause_black_img = ImageTk.PhotoImage(Image.open('content/pause_night.png'))
+continue_white_img = ImageTk.PhotoImage(Image.open('content/play.png'))
+continue_black_img = ImageTk.PhotoImage(Image.open('content/play_night.png'))
+change_theme_white_img = ImageTk.PhotoImage(Image.open('content/mode.png'))
+change_theme_black_img = ImageTk.PhotoImage(Image.open('content/mode_night.png'))
+bad_views_white_img = ImageTk.PhotoImage(Image.open('content/sleep.png'))
+bad_views_black_img = ImageTk.PhotoImage(Image.open('content/sleep_night.png'))
+add_white_img = ImageTk.PhotoImage(Image.open('content/add.png'))
+add_black_img = ImageTk.PhotoImage(Image.open('content/add_night.png'))
 
 
 first = True #Проигрывается ли песня первый раз
